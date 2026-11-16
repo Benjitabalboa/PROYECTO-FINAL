@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width= , initial-scale=1.0">
     <title>DREWBPEDIA</title>
+    <link rel="stylesheet" href="estilo.css">
+
 </head>
 
 <body>
-    <header>
+      <header>
         <h1>DREWBPEDIA</h1>
         <nav>
             <ul>
-                <li><a href="#inicio">INICIO</a></li>
-                <li><a href="#eras">ERAS</a></li>
-                <li><a href="#discografia">DISCOGRAFÍA</a></li>
-                <li><a href="#logros">LOGROS</a></li>
-                <li><a href="#galeria">GALERÍA</a></li>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="eras.html">ERAS</a></li>
+                <li><a href="discografia.html">DISCOGRAFÍA</a></li>
+                <li><a href="logros.html">LOGROS</a></li>
+                <li><a href="galeria.html">GALERÍA</a></li>
             </ul>
         </nav>
     </header>
@@ -32,15 +34,30 @@
         <!-- 2. SECCIÓN INTRODUCCIÓN Y FICHA TÉCNICA -->
         <section id="ficha">
             <!-- Columna de introducción histórica -->
+
             <div>
                 <h2>El Descubrimiento de una Leyenda (2007 - 2008)</h2>
                 <p>Nacido en London, Ontario, Canadá, un pequeño niño comenzó a subir videos caseros a YouTube cantando
                     con un talento innato. En 2008, su destino cambió para siempre cuando Scooter Braun descubrió sus
-                    videos de forma accidental,
-                    abriéndole las puertas a una audición con Usher y al inicio del fenómeno fan más grande del siglo.
-                </p>
-                <button type="button">LEER BIOGRAFÍA COMPLETA</button>
+                    videos de forma accidental, abriéndole las puertas a una audición con Usher y al inicio del fenómeno
+                    fan más grande del siglo.</p>
+
+                <!-- Botón desplegable nativo en HTML -->
+                <details class="bio-desplegable">
+                    <summary>LEER BIOGRAFÍA COMPLETA</summary>
+                    <div class="bio-contenido">
+                        <p>Tras firmar con Island Records, su EP debut <em>My World</em> (2009) lo convirtió en el
+                            primer artista en tener siete canciones de un álbum debut en el Billboard Hot 100. Con el
+                            lanzamiento de <em>My World 2.0</em> (2010) y el hit mundial "Baby", desató la "Bieberfever"
+                            llenando estadios en todo el planeta con apenas 16 años.</p>
+                        <p>A lo largo de la década siguiente, evolucionó de ídolo adolescente a referente global del pop
+                            y el R&B con discos como <em>Believe</em>, <em>Journals</em> y <em>Purpose</em> (2015),
+                            rompiendo récords históricos de streaming y ganando múltiples premios Grammy. Hoy continúa
+                            reinventando su sonido con proyectos independientes como <em>Swag</em>.</p>
+                    </div>
+                </details>
             </div>
+
 
             <!-- Columna de la ficha de datos rápidos -->
             <div>
@@ -103,8 +120,8 @@
             <ul>
                 <li> <img src="./assets/img/album myw2.jpg" alt="mw2">
                 <li> <img src="./assets/img/believe album.jpg" alt="believe"></li>
-                <li> <img src="./assets/img/journals.jpg" alt="journals"></li>
-                <li> <img src="./assets/img/purpose portada.jpg"alt="purpose"></li>
+                <li> <img src="./assets/img/journalssssss.jpg" alt="journals"></li>
+                <li> <img src="./assets/img/purpose portada.jpg" alt="purpose"></li>
                 <li> <img src="./assets/img/changes album.jpg" alt="changes"></li>
                 <li> <img src="./assets/img/album justice.jpg" alt="justic"></li>
                 <li> <img src="./assets/img/justin_bieber_swag-portada.jpg" alt="sw"></li>
@@ -113,69 +130,75 @@
         </section>
 
 
-      <!-- ================= 5. SECCIÓN: VITRINA DE LOGROS ================= -->
-    <section id="logros">
-      <h2>🏆 VITRINA DE LOGROS</h2>
-      <p>Los hitos y récords que convirtieron a Justin en una leyenda del pop.</p>
+        <!-- ================= 5. SECCIÓN: VITRINA DE LOGROS ================= -->
+        <section id="logros">
+            <h2>🏆 VITRINA DE LOGROS</h2>
+            <p>Los hitos y récords que convirtieron a Justin en una leyenda del pop.</p>
 
-      <!-- Bloques de contadores numéricos -->
-      <div>
-        <div>
-          <h3>2</h3>
-          <p>PREMIOS GRAMMY</p>
-        </div>
-        <div>
-          <h3>26</h3>
-          <p>PREMIOS BILLBOARD</p>
-        </div>
-        <div>
-          <h3>33</h3>
-          <p>RECORD GUINNESS</p>
-        </div>
-      </div>
+            <!-- Bloques de contadores numéricos -->
+            <div>
+                <div>
+                    <h3>2</h3>
+                    <p>PREMIOS GRAMMY</p>
+                </div>
+                <div>
+                    <h3>26</h3>
+                    <p>PREMIOS BILLBOARD</p>
+                </div>
+                <div>
+                    <h3>33</h3>
+                    <p>RECORD GUINNESS</p>
+                </div>
+            </div>
 
-      <!-- Lista de hitos históricos -->
-      <div>
-        <h3>⭐ Récord en YouTube</h3>
-        <p><strong>Hito:</strong> Primer artista en la historia en superar los 70 millones de suscriptores en la plataforma.</p>
+            <!-- Lista de hitos históricos -->
+            <div>
+                <h3>⭐ Récord en YouTube</h3>
+                <p><strong>Hito:</strong> Primer artista en la historia en superar los 70 millones de suscriptores en la
+                    plataforma.</p>
 
-        <h3>⭐ Líder en Billboard</h3>
-        <p><strong>Hito:</strong> El artista masculino más joven en debutar en el puesto #1 del Hot 100 con el tema "What Do You Mean?".</p>
+                <h3>⭐ Líder en Billboard</h3>
+                <p><strong>Hito:</strong> El artista masculino más joven en debutar en el puesto #1 del Hot 100 con el
+                    tema "What Do You Mean?".</p>
 
-        <h3>⭐ Monopolio en Reino Unido</h3>
-        <p><strong>Hito:</strong> Primer artista en ocupar los puestos #1, #2 y #3 de las listas británicas al mismo tiempo con sus éxitos de Purpose.</p>
+                <h3>⭐ Monopolio en Reino Unido</h3>
+                <p><strong>Hito:</strong> Primer artista en ocupar los puestos #1, #2 y #3 de las listas británicas al
+                    mismo tiempo con sus éxitos de Purpose.</p>
 
-        <h3>⭐ Impacto Global</h3>
-        <p><strong>Hito:</strong> Co-líder del fenómeno mundial "Despacito Remix", marcando récords históricos de permanencia en el #1 de las listas internacionales.</p>
-      </div>
+                <h3>⭐ Impacto Global</h3>
+                <p><strong>Hito:</strong> Co-líder del fenómeno mundial "Despacito Remix", marcando récords históricos
+                    de permanencia en el #1 de las listas internacionales.</p>
+            </div>
 
-      <!-- Imagen destacada lateral de logros -->
-      <div>
-        <p> <img src="./assets/img/grammy.jpg" alt="GRAMMY">
-        </p>
-      </div>
-    </section>
+            <!-- Imagen destacada lateral de logros -->
+            <div>
+                <p> <img src="./assets/img/grammy.jpg" alt="GRAMMY">
+                </p>
+            </div>
+        </section>
 
-     <!-- SECCIÓN GALERÍA MULTIMEDIA -->
-    <section id="galeria">
-      <h2>📸 GALERÍA MULTIMEDIA</h2>
-      
-      <!-- Fila 1 -->
-      <div>
-        <p>[ <img src="./assets/img/myworldera2.jpg" alt="myw2"> My World Tour - Sudadera Morada]</p>
-        <p>[ <img src="./assets/img/believe era.jpg" alt="blera"> Believe Tour - Luces Láser]</p>
-        <p>[ <img src="./assets/img/purpose era 2.jpg" alt="p2"> Purpose World Tour - Lluvia Artificial]</p>
-        <p>[ <img src="./assets/img/justice era.webp" alt="justera"> Justice World Tour - Luz Cálida Acústica]</p>
-      </div>
+        <!-- SECCIÓN GALERÍA MULTIMEDIA -->
+        <section id="galeria">
+            <h2>📸 GALERÍA MULTIMEDIA</h2>
 
-      <!-- Fila 2 -->
-      <div>
-        <p>[ <img src="./assets/img/gala justin hailey.webp" alt="gala"> Met Gala - Trajes de Gala con Hailey]</p>
-        <p>[ <img src="./assets/img/drew justin bieber.jpg" alt="drewjb">: Drew House]</p>
-        <p>[ <img src="./assets/img/first place ensayo.png" alt="ensayoblanconegro">: En el Estudio - Componiendo en Blanco y Negro]</p>
-        <p>[ <img src="./assets/img/ensato guitarra.avif" alt="guitarrajustin">: Ensayo - Sentado con Guitarra Acústica]</p>
-      </div>
-    </section>
+            <!-- Fila 1 -->
+            <div>
+                <p> <img src="./assets/img/myworldera2.jpg" alt="myw2"> My World Tour </p>
+                <p><img src="./assets/img/believe era.jpg" alt="blera"> Believe Tour </p>
+                <p> <img src="./assets/img/purpose era 2.jpg" alt="p2"> Purpose World Tour </p>
+                <p> <img src="./assets/img/justice era.webp" alt="justera"> Justice World Tour
+                </p>
+            </div>
+
+            <!-- Fila 2 -->
+            <div>
+                <p> <img src="./assets/img/gala justin hailey.webp" alt="gala"> 
+                </p>
+                <p> <img src="./assets/img/drew justin bieber.jpg" alt="drewjb">: </p>
+                <p> <img src="./assets/img/first place ensayo.png" alt="ensayoblanconegro">: </p>
+                <p> <img src="./assets/img/ensato guitarra.avif" alt="guitarrajustin"></p>
+            </div>
+        </section>
 
     </main>
 
@@ -185,17 +208,20 @@
         <div>
             <p>© 2026 Bieberpedia. Creado por fans para fans con fines educativos y de entretenimiento.</p>
         </div>
-        
+
 
         <!-- enlaces secundarios a redes sociales oficiales -->
         <div>
             <p>Enlaces secundarios:</p>
             <ul>
-                <img src="./assets/img/social.png" alt="spotify"><li><a href="https://open.spotify.com/intl-es/artist/1uNFoZAHBGtllmzznpCI3s" target="_blank">Spotify
+                <img src="./assets/img/social.png" alt="spotify">
+                <li><a href="https://open.spotify.com/intl-es/artist/1uNFoZAHBGtllmzznpCI3s" target="_blank">Spotify
                         Oficial de Justin Bieber</a></li>
-               <img src="./assets/img/youtube.png" alt="yt"> <li><a href="https://www.youtube.com/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" target="_blank">YouTube Oficial
+                <img src="./assets/img/youtube.png" alt="yt">
+                <li><a href="https://www.youtube.com/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" target="_blank">YouTube Oficial
                         de Justin Bieber</a></li>
-                 <img src="./assets/img/instagram.png" alt="instagram"><li><a href="https://www.instagram.com/lilbieber/" target="_blank">Instagram Oficial de Justin
+                <img src="./assets/img/instagram.png" alt="instagram">
+                <li><a href="https://www.instagram.com/lilbieber/" target="_blank">Instagram Oficial de Justin
                         Bieber</a></li>
             </ul>
         </div>
