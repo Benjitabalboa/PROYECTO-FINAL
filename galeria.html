@@ -11,10 +11,15 @@
 
 <body>
 
-        <header>
+         <!-- Cabecera superior de la página -->
+    <header>
+        <!-- Título principal o logotipo del sitio -->
         <h1>DREWBPEDIA</h1>
+        <!-- Contenedor semántico para el menú de navegación -->
         <nav>
+            <!-- Lista desordenada (sin números) para agrupar los enlaces del menú -->
             <ul>
+                <!-- Elemento de lista + enlace (a) que lleva hacia otra página HTML -->
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="eras.html">ERAS</a></li>
                 <li><a href="discografia.html">DISCOGRAFÍA</a></li>
@@ -23,198 +28,179 @@
             </ul>
         </nav>
     </header>
-
-    <main>
+   <!-- <main> (Etiqueta Semántica): Define el contenido principal y único de esta página -->
+<main>
         <!-- ================= SECCIÓN: GALERÍA MULTIMEDIA ================= -->
+        <!-- <section> (Etiqueta Semántica): Agrupa un bloque temático completo. El id="galeria" sirve como identificador único para conectarlo con el CSS -->
         <section id="galeria">
+            <!-- <h2> (Semántica de Jerarquía): Título principal de esta sección (segundo en importancia después del <h1> del header) -->
             <h2>📸 GALERÍA MULTIMEDIA: El Legado Visual</h2>
 
             <!-- 1. CATEGORÍA: EN CONCIERTO -->
+            <!-- <div> (No Semántica): Caja genérica sin significado propio; la usamos únicamente como "Contenedor Padre" para aplicar display: flex en CSS -->
             <div>
+                <!-- <h3> (Semántica de Jerarquía): Subtítulo que define el tema de este grupo de fotos -->
                 <h3>🎤 En Concierto</h3>
+                
+                <!-- <div> hijo (No Semántica): Caja individual que envuelve cada foto para darle un ancho fijo (width) dentro de Flexbox -->
                 <div>
+                    <!-- <img> (Contenido Multimedia): Inserta la imagen; src indica la ruta local y alt da accesibilidad (texto alternativo) -->
                     <img src="./assets/img/GALERIA VIVO.jpg" alt="Justin Bieber en concierto 1">
-
                 </div>
                 <div>
                     <img src="./assets/img/GALERIA VIVO 2.jpg" alt="Justin Bieber en concierto 2">
-
                 </div>
                 <div>
                     <img src="./assets/img/GALERIA VIVO 3.jpg" alt="Justin Bieber en concierto 3">
-
                 </div>
                 <div>
                     <img src="./assets/img/GALERIA VIVO 4.jpg" alt="Justin Bieber en concierto 4">
-
                 </div>
                 <div>
                     <img src="./assets/img/GALERIA VIVO 5.jpg" alt="Justin Bieber en concierto 5">
-
                 </div>
                 <div>
                     <img src="./assets/img/GALERIA VIVO 6.jpg" alt="Justin Bieber en concierto 6">
-
                 </div>
                 <div>
                     <img src="./assets/img/GALERIA VIVO 7.jpg" alt="Justin Bieber en concierto 7">
-
                 </div>
                 <div>
                     <img src="./assets/img/GALERIA VIVO 8.jpg" alt="Justin Bieber en concierto 8">
-
                 </div>
                 <div>
                     <img src="./assets/img/GALERIA VIVO 9.jpg" alt="Justin Bieber en concierto 9">
-
                 </div>
             </div>
 
             <!-- 2. CATEGORÍA: PHOTOSHOOTS -->
+            <!-- Segundo contenedor padre <div> para separar visualmente las sesiones editoriales -->
             <div>
                 <h3>📸 Photoshoots</h3>
                 <div>
                     <img src="./assets/img/GALERIA P1.jpg" alt="Sesión de fotos revista GQ">
-
                 </div>
                 <div>
                     <img src="./assets/img/GALERIA P2.jpg" alt="Sesión de fotos revista Billboard">
-
                 </div>
                 <div>
                     <img src="./assets/img/GALERIA P3.jpg" alt="Sesión de fotos en blanco y negro">
-
                 </div>
                 <div>
-                    <img src="./assets/img/GALERIA P5.jpg" alt="Sesión promocional de ál">
-
+                    <img src="./assets/img/GALERIA P5.jpg" alt="Sesión promocional de álbum">
                 </div>
                 <div>
-                    <img src="./assets/img/GALERIA P6.jpg" alt="Sesión promocional de ál">
-
-                </div>
-
-                <div>
-                    <img src="./assets/img/GALERIA P8.jpg" alt="Sesión promocional de ál">
-
+                    <img src="./assets/img/GALERIA P6.jpg" alt="Sesión promocional de álbum">
                 </div>
                 <div>
-                    <img src="./assets/img/GALERIA P9.jpg" alt="Sesión promocional de ál">
-
+                    <img src="./assets/img/GALERIA P8.jpg" alt="Sesión promocional de álbum">
                 </div>
                 <div>
-                    <img src="./assets/img/GALERIA P10.jpg" alt="Sesión promocional de ál">
-
+                    <img src="./assets/img/GALERIA P9.jpg" alt="Sesión promocional de álbum">
+                </div>
+                <div>
+                    <img src="./assets/img/GALERIA P10.jpg" alt="Sesión promocional de álbum">
                 </div>
             </div>
 
             <!-- 3. CATEGORÍA: FOTOS CASUALES -->
+            <!-- Tercer contenedor padre <div> -->
             <div>
                 <h3>🚶‍♂️ Fotos Casuales</h3>
                 <div>
                     <img src="./assets/img/galeria casuaL 1.jpg" alt="Justin Bieber caminando por la ciudad">
-
                 </div>
                 <div>
                     <img src="./assets/img/GALERIA CASUAL 2.jpg" alt="Justin Bieber caminando por la ciudad">
-                    <div>
-                        <img src="./assets/img/GALERIA CASUAL 3.jpg" alt="Justin Bieber caminando por la ciudad">
-
-                    </div>
-                    <div>
-                        <img src="./assets/img/GALERIA CASUAL 4.jpg" alt="Justin Bieber caminando por la ciudad">
-
-                    </div>
-                    <div>
-                        <img src="./assets/img/GALERIA CASUAL 5.jpg" alt="Justin Bieber caminando por la ciudad">
-
-                    </div>
-                    <div>
-                        <img src="./assets/img/GALERIA CASUAL 6.jpg" alt="Justin Bieber caminando por la ciudad">
-
-                    </div>
-
-                </div>
-
-                <!-- 4. CATEGORÍA: FOTOS EN EL ESTUDIO -->
+                </div> <!-- Cierre corregido para que las siguientes fotos queden como hermanas y no hijas -->
                 <div>
-                    <h3>🎧 Fotos en el Estudio</h3>
-                    <div>
-                        <img src="./assets/img/GALERIA ESTUDIO 1.jpg"
-                            alt="Justin Bieber grabando voces con auriculares">
-
-                    </div>
-                    <div>
-                        <img src="./assets/img/GALERIA ESTUDIO 2.jpg"
-                            alt="Justin Bieber grabando voces con auriculares">
-
-                    </div>
-                    <div>
-                        <img src="./assets/img/GALERIA ESTUDIO 3.jpg"
-                            alt="Justin Bieber grabando voces con auriculares">
-
-                    </div>
-                    <div>
-                        <img src="./assets/img/GALERIA ESTUDIO 4.jpg"
-                            alt="Justin Bieber grabando voces con auriculares">
-
-                    </div>
-                    <div>
-                        <img src="./assets/img/GALERIA ESTUDIO 5.jpg"
-                            alt="Justin Bieber grabando voces con auriculares">
-
-                    </div>
-                    <div>
-                        <img src="./assets/img/GALERIA ESTUDIO 6.jpg"
-                            alt="Justin Bieber grabando voces con auriculares">
-
-                    </div>
-                    <div>
-                        <img src="./assets/img/GALERIA ESTUDIO 7.jpg"
-                            alt="Justin Bieber grabando voces con auriculares">
-
-                    </div>
-                    <div>
-                        <img src="./assets/img/GALERIA ESTUDIO 8.jpg"
-                            alt="Justin Bieber grabando voces con auriculares">
-
-                    </div>
-                    <div>
-                        <img src="./assets/img/GALERIA ESTUDIO 9.jpg"
-                            alt="Justin Bieber grabando voces con auriculares">
-
-                    </div>
+                    <img src="./assets/img/GALERIA CASUAL 3.jpg" alt="Justin Bieber caminando por la ciudad">
                 </div>
+                <div>
+                    <img src="./assets/img/GALERIA CASUAL 4.jpg" alt="Justin Bieber caminando por la ciudad">
+                </div>
+                <div>
+                    <img src="./assets/img/GALERIA CASUAL 5.jpg" alt="Justin Bieber caminando por la ciudad">
+                </div>
+                <div>
+                    <img src="./assets/img/GALERIA CASUAL 6.jpg" alt="Justin Bieber caminando por la ciudad">
+                </div>
+            </div> <!-- Cierre corregido de la categoría Fotos Casuales -->
+
+            <!-- 4. CATEGORÍA: FOTOS EN EL ESTUDIO -->
+            <!-- Cuarto contenedor padre <div> -->
+            <div>
+                <h3>🎧 Fotos en el Estudio</h3>
+                <div>
+                    <img src="./assets/img/GALERIA ESTUDIO 1.jpg" alt="Justin Bieber grabando voces con auriculares">
+                </div>
+                <div>
+                    <img src="./assets/img/GALERIA ESTUDIO 2.jpg" alt="Justin Bieber grabando voces con auriculares">
+                </div>
+                <div>
+                    <img src="./assets/img/GALERIA ESTUDIO 3.jpg" alt="Justin Bieber grabando voces con auriculares">
+                </div>
+                <div>
+                    <img src="./assets/img/GALERIA ESTUDIO 4.jpg" alt="Justin Bieber grabando voces con auriculares">
+                </div>
+                <div>
+                    <img src="./assets/img/GALERIA ESTUDIO 5.jpg" alt="Justin Bieber grabando voces con auriculares">
+                </div>
+                <div>
+                    <img src="./assets/img/GALERIA ESTUDIO 6.jpg" alt="Justin Bieber grabando voces con auriculares">
+                </div>
+                <div>
+                    <img src="./assets/img/GALERIA ESTUDIO 7.jpg" alt="Justin Bieber grabando voces con auriculares">
+                </div>
+                <div>
+                    <img src="./assets/img/GALERIA ESTUDIO 8.jpg" alt="Justin Bieber grabando voces con auriculares">
+                </div>
+                <div>
+                    <img src="./assets/img/GALERIA ESTUDIO 9.jpg" alt="Justin Bieber grabando voces con auriculares">
+                </div>
+            </div>
 
         </section>
+<!-- Cierre de <main> -->
+</main>
 
 
     </main>
+    <!-- Pie de página inferior del sitio web -->
     <footer>
 
-        <!-- texto de derechos de autor -->
+        <!-- Primer bloque: agrupa el aviso legal o derechos de autor -->
         <div>
             <p>© 2026 Bieberpedia. Creado por fans para fans con fines educativos y de entretenimiento.</p>
         </div>
 
-
-        <!-- enlaces secundarios a redes sociales oficiales -->
+        <!-- Segundo bloque: agrupa el título y la lista de redes sociales -->
         <div>
             <p>Enlaces secundarios:</p>
+            <!-- Lista desordenada que contiene los enlaces externos -->
             <ul>
+                <!-- Icono de Spotify -->
                 <img src="./assets/img/social.png" alt="spotify">
+                <!-- Elemento de lista + enlace (a); target="_blank" abre la web en una pestaña nueva -->
                 <li><a href="https://open.spotify.com/intl-es/artist/1uNFoZAHBGtllmzznpCI3s" target="_blank">Spotify
                         Oficial de Justin Bieber</a></li>
+                
+                <!-- Icono de YouTube -->
                 <img src="./assets/img/youtube.png" alt="yt">
                 <li><a href="https://www.youtube.com/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" target="_blank">YouTube Oficial
                         de Justin Bieber</a></li>
+                
+                <!-- Icono de Instagram -->
                 <img src="./assets/img/instagram.png" alt="instagram">
                 <li><a href="https://www.instagram.com/lilbieber/" target="_blank">Instagram Oficial de Justin
                         Bieber</a></li>
             </ul>
         </div>
 
+    <!-- Cierra el pie de página -->
     </footer>
+<!-- Cierra el cuerpo visible de la web -->
 </body>
 
+<!-- Cierra todo el documento HTML -->
 </html>

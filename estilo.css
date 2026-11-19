@@ -1,506 +1,292 @@
-/* ==========================================================================
-   DREWBPEDIA - proyecto.css (VERSIÓN PRO Y SENCILLA: CAJA + FLEXBOX)
-   ========================================================================== */
+/* DREWBPEDIA - CSS simplificado y comentado */
 
-/* 1. MODELO DE CAJA Y BASE GENERAL */
+/* 1. ESTILOS GENERALES */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+    margin: 0;                 /* Quita márgenes */
+    padding: 0;                /* Quita espacios internos */
+    box-sizing: border-box;    /* Incluye bordes y espacios en el tamaño */
+    scroll-behavior: smooth;   /* Desplazamiento suave */
 }
-
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0b0b0f;
-  color: #f3f4f6;
-  line-height: 1.6;
+    font-family: Arial, sans-serif; /* Tipo de letra */
+    background: #0b0b0f;             /* Fondo oscuro */
+    color: #f3f4f6;                  /* Color del texto */
+    line-height: 1.6;                /* Separación entre líneas */
 }
-
 section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 60px 25px;
-  border-bottom: 1px solid #1f1f29;
+    max-width: 1200px;               /* Ancho máximo */
+    margin: auto;                    /* Centra la sección */
+    padding: 60px 25px;              /* Espacio interior */
+    border-bottom: 1px solid #262633;/* Línea inferior */
 }
-
 h2 {
-  font-size: 28px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 30px;
-  color: #ffffff;
-  border-left: 6px solid #8b5cf6;
-  padding-left: 15px;
+    color: white;                    /* Título blanco */
+    font-size: 28px;                 /* Tamaño del título */
+    text-transform: uppercase;       /* Texto en mayúsculas */
+    border-left: 6px solid #8b5cf6;  /* Línea violeta */
+    padding-left: 15px;              /* Espacio entre línea y texto */
+    margin-bottom: 30px;             /* Espacio debajo */
 }
 
-/* ==========================================================================
-   2. CABECERA Y MENÚ (FLEXBOX)
-   ========================================================================== */
+/* 2. CABECERA Y MENÚ */
+header, footer {
+    display: flex;                   /* Organiza elementos en fila */
+    justify-content: space-between;  /* Separa los elementos */
+    align-items: center;             /* Centra verticalmente */
+    flex-wrap: wrap;                 /* Permite pasar a otra fila */
+    gap: 20px;                       /* Espacio entre elementos */
+}
 header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: #121218;
-  padding: 20px 50px;
-  border-bottom: 3px solid #8b5cf6;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    position: sticky;                /* Mantiene el menú visible */
+    top: 0;                          /* Lo pega arriba */
+    z-index: 100;                    /* Lo muestra por encima */
+    background: #121218;             /* Fondo del menú */
+    padding: 20px 50px;              /* Espacio interior */
+    border-bottom: 3px solid #8b5cf6;/* Borde violeta */
 }
-
 header h1 {
-  font-size: 26px;
-  letter-spacing: 3px;
-  color: #8b5cf6;
-  text-shadow: 0 0 15px rgba(139, 92, 246, 0.5);
+    color: #8b5cf6;                  /* Nombre violeta */
+    font-size: 26px;                 /* Tamaño del nombre */
+}
+header ul, footer ul {
+    display: flex;                   /* Enlaces en fila */
+    gap: 20px;                       /* Separación entre enlaces */
+    list-style: none;                /* Quita los puntos */
+}
+header a, footer a {
+    color: #e5e7eb;                  /* Color de los enlaces */
+    text-decoration: none;           /* Quita subrayado */
+    font-weight: bold;               /* Texto en negrita */
+    transition: 0.3s;                /* Suaviza los cambios */
+}
+header a:hover, footer a:hover {
+    color: #8b5cf6;                  /* Enlace violeta al pasar el mouse */
 }
 
-header ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-header a {
-  text-decoration: none;
-  color: #e5e7eb;
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 1px;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: 0.3s;
-}
-
-header a:hover {
-  color: #ffffff;
-  background-color: #8b5cf6;
-}
-
-/* ==========================================================================
-   3. PORTADA PRINCIPAL (#inicio)
-   ========================================================================== */
+/* 3. PORTADA */
 #inicio {
-  max-width: 100%;
-  text-align: center;
-  background-color: #111116;
-  padding: 70px 20px;
+    max-width: 100%;                 /* Ocupa todo el ancho */
+    text-align: center;              /* Centra el contenido */
+    background: #111116;             /* Fondo de portada */
+    padding: 70px 20px;              /* Espacio interior */
 }
-
 #inicio img {
-  width: 100%;
-  max-width: 900px;
-  height: 460px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 14px;
-  border: 3px solid #8b5cf6;
-  box-shadow: 0 10px 35px rgba(139, 92, 246, 0.3);
-  margin-bottom: 25px;
+    width: 100%;                     /* Imagen adaptable */
+    max-width: 900px;                /* Ancho máximo */
+    height: 460px;                   /* Altura */
+    object-fit: cover;               /* Recorta para llenar el espacio */
+    object-position: top;             /* Prioriza la parte superior */
+    border: 3px solid #8b5cf6;       /* Borde violeta */
+    border-radius: 14px;             /* Esquinas redondeadas */
+    margin-bottom: 25px;             /* Espacio debajo */
 }
-
 #inicio h1 {
-  font-size: 36px;
-  max-width: 800px;
-  margin: 0 auto;
-  color: #ffffff;
+    max-width: 800px;                /* Limita el ancho */
+    margin: auto;                    /* Centra el título */
+    font-size: 36px;                 /* Tamaño del título */
 }
 
-/* ==========================================================================
-   4. BIOGRAFÍA Y FICHA TÉCNICA (#ficha)
-   ========================================================================== */
+/* 4. BIOGRAFÍA Y FICHA */
 #ficha {
-  display: flex;
-  gap: 35px;
-  align-items: flex-start;
+    display: flex;                   /* Columnas en fila */
+    align-items: flex-start;         /* Alinea desde arriba */
+    gap: 35px;                       /* Espacio entre columnas */
 }
-
-#ficha div {
-  flex: 1;
-  background-color: #15151d;
-  border: 1px solid #262633;
-  border-top: 4px solid #8b5cf6;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+#ficha div, #logros div {
+    flex: 1;                         /* Comparte el espacio */
+    background: #15151d;             /* Fondo de las tarjetas */
+    border: 1px solid #262633;       /* Borde fino */
+    border-radius: 12px;             /* Esquinas redondeadas */
+    padding: 30px;                   /* Espacio interior */
+    margin-bottom: 25px;             /* Espacio debajo */
 }
-
 #ficha p {
-  margin-bottom: 18px;
-  color: #d1d5db;
-  font-size: 16px;
+    color: #d1d5db;                  /* Color de párrafos */
+    margin-bottom: 18px;             /* Separa párrafos */
 }
-
 #ficha img {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  border: 2px solid #262633;
+    width: 100%;                     /* Ocupa el ancho disponible */
+    height: 320px;                   /* Altura */
+    object-fit: cover;               /* Recorta la imagen */
+    object-position: top;             /* Prioriza la parte superior */
+    border-radius: 10px;             /* Esquinas redondeadas */
 }
-
-#ficha button,
-#ficha summary {
-  display: inline-block;
-  background-color: #8b5cf6;
-  color: #ffffff;
-  border: none;
-  padding: 14px 24px;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
+#ficha button, #ficha summary {
+    display: inline-block;           /* Permite aplicar espacios */
+    background: #8b5cf6;             /* Fondo violeta */
+    color: white;                    /* Texto blanco */
+    border: 0;                       /* Sin borde */
+    padding: 14px 24px;              /* Espacio interior */
+    border-radius: 8px;              /* Esquinas redondeadas */
+    cursor: pointer;                 /* Cursor de mano */
+    transition: 0.3s;                /* Suaviza el efecto */
 }
-
-#ficha button:hover,
-#ficha summary:hover {
-  background-color: #7c3aed;
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(139, 92, 246, 0.4);
+#ficha button:hover, #ficha summary:hover {
+    background: #7c3aed;             /* Violeta más oscuro */
+    transform: translateY(-3px);     /* Sube el botón */
 }
-
-#ficha h3 {
-  color: #8b5cf6;
-  font-size: 18px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #262633;
-  padding-bottom: 10px;
+#ficha h3, #logros h3 {
+    color: #8b5cf6;                  /* Subtítulos violetas */
+    margin-bottom: 15px;             /* Espacio debajo */
 }
-
-#ficha ul {
-  list-style: none;
+#ficha ul, #logros ul {
+    list-style: none;                /* Quita los puntos */
 }
-
 #ficha li {
-  padding: 10px 0;
-  border-bottom: 1px solid #1f1f29;
-  font-size: 15px;
+    padding: 10px 0;                 /* Espacio arriba y abajo */
+    border-bottom: 1px solid #262633;/* Línea divisoria */
 }
 
-/* ==========================================================================
-   5. ERAS MUSICALES (#eras - en index.html y eras.html)
-   ========================================================================== */
-#eras article,
-#eras div {
-  background-color: #15151d;
-  border: 1px solid #262633;
-  border-left: 6px solid #8b5cf6;
-  border-radius: 12px;
-  padding: 25px;
-  margin-bottom: 25px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  transition: 0.3s;
+/* 5. ERAS MUSICALES */
+#eras article, #eras div {
+    background: #15151d;             /* Fondo de la tarjeta */
+    border: 1px solid #262633;       /* Borde */
+    border-left: 6px solid #8b5cf6;  /* Línea violeta lateral */
+    border-radius: 12px;             /* Esquinas redondeadas */
+    padding: 25px;                   /* Espacio interior */
+    margin-bottom: 25px;             /* Separa las tarjetas */
+    transition: 0.3s;                /* Suaviza los cambios */
 }
-
-#eras article:hover,
-#eras div:hover {
-  border-color: #8b5cf6;
-  transform: translateX(6px);
+#eras article:hover, #eras div:hover {
+    transform: translateX(6px);     /* Mueve la tarjeta a la derecha */
+    border-color: #8b5cf6;           /* Borde violeta */
 }
-
 #eras img {
-  width: 100%;
-  max-width: 450px;
-  height: 330px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 10px;
-  border: 2px solid #262633;
-  margin: 15px 0;
-  display: block;
+    width: 100%;                     /* Imagen adaptable */
+    max-width: 450px;                /* Ancho máximo */
+    height: 330px;                   /* Altura */
+    object-fit: cover;               /* Recorta para llenar */
+    object-position: top;             /* Prioriza la parte superior */
+    border-radius: 10px;             /* Esquinas redondeadas */
 }
 
-/* ==========================================================================
-   6. DISCOGRAFÍA EN INICIO (#discografia)
-   ========================================================================== */
+/* 6. DISCOGRAFÍA */
 #discografia ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 22px;
+    display: flex;                   /* Álbumes en fila */
+    flex-wrap: wrap;                 /* Permite varias filas */
+    gap: 22px;                       /* Espacio entre álbumes */
+    list-style: none;                /* Quita los puntos */
 }
-
 #discografia li {
-  width: 23%;
-  height: 260px;
-  border: 2px solid #262633;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-  transition: 0.3s;
+    width: 23%;                      /* Ancho de cada álbum */
+    height: 260px;                   /* Altura */
+    overflow: hidden;                /* Oculta lo que sobresale */
+    border: 2px solid #262633;       /* Borde */
+    border-radius: 12px;             /* Esquinas redondeadas */
+    transition: 0.3s;                /* Suaviza el efecto */
 }
-
 #discografia li:hover {
-  transform: scale(1.05);
-  border-color: #8b5cf6;
-  box-shadow: 0 0 25px rgba(139, 92, 246, 0.6);
+    transform: scale(1.05);          /* Agranda la tarjeta */
+    border-color: #8b5cf6;           /* Borde violeta */
 }
-
 #discografia img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-  transition: 0.3s;
+    width: 100%;                     /* Ocupa todo el ancho */
+    height: 100%;                    /* Ocupa toda la altura */
+    object-fit: cover;               /* Recorta la imagen */
 }
 
-#discografia li:hover img {
-  transform: scale(1.08);
-}
-
-/* ==========================================================================
-   7. LOGROS EN INICIO (#logros)
-   ========================================================================== */
-#logros div {
-  background-color: #15151d;
-  border: 1px solid #262633;
-  border-radius: 12px;
-  padding: 30px;
-  margin-bottom: 25px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
-
-#logros h3 {
-  color: #8b5cf6;
-  font-size: 19px;
-  margin-top: 15px;
-  margin-bottom: 6px;
-}
-
+/* 7. LOGROS */
 #logros img {
-  width: 100%;
-  max-width: 700px;
-  height: 420px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 12px;
-  border: 3px solid #8b5cf6;
-  display: block;
-  margin: 20px auto 0;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    display: block;                  /* Permite centrar la imagen */
+    width: 100%;                     /* Se adapta al contenedor */
+    max-width: 700px;                /* Ancho máximo */
+    height: 420px;                   /* Altura */
+    object-fit: cover;               /* Recorta para llenar */
+    object-position: top;             /* Prioriza la parte superior */
+    margin: 20px auto 0;             /* Centra y separa arriba */
+    border: 3px solid #8b5cf6;       /* Borde violeta */
+    border-radius: 12px;             /* Esquinas redondeadas */
 }
 
-/* ==========================================================================
-   8. GALERÍA LIMPIA Y NATURAL (#galeria - index.html y galeria.html)
-   ========================================================================== */
-
-/* Contenedor de cada categoría: limpio, sin cajas ni fondos pesados */
+/* 8. GALERÍA */
 #galeria div {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 50px;
+    display: flex;                   /* Fotos en fila */
+    flex-wrap: wrap;                 /* Permite varias filas */
+    gap: 20px;                       /* Espacio entre fotos */
+    margin-bottom: 40px;             /* Separa categorías */
 }
-
-/* Título de cada categoría: simple con una línea abajo */
 #galeria h3 {
-  width: 100%;
-  color: #ffffff;
-  font-size: 22px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #8b5cf6;
-  margin-bottom: 10px;
+    width: 100%;                     /* Ocupa toda la fila */
+    color: white;                    /* Texto blanco */
+    border-bottom: 2px solid #8b5cf6;/* Línea violeta */
+    padding-bottom: 10px;             /* Espacio debajo */
 }
-
-/* Tarjetas de fotos: sin marcos gruesos ni relleno extra */
-#galeria p,
-#galeria div div {
-  width: 31%;
-  margin-bottom: 0;
-  text-align: center;
-  font-size: 14px;
-  color: #d1d5db;
+#galeria p, #galeria div div {
+    width: 31%;                      /* Aproximadamente tres tarjetas por fila */
+    padding: 12px;                   /* Espacio interior */
+    text-align: center;              /* Centra el contenido */
+    background: #181822;             /* Fondo de la tarjeta */
+    border: 2px solid #2a2a38;       /* Borde */
+    border-radius: 12px;             /* Esquinas redondeadas */
+    overflow: hidden;                /* Oculta lo que sobresale */
+    transition: 0.3s;                /* Suaviza los efectos */
 }
-
-/* La foto pura, grande y limpia */
+#galeria p:hover, #galeria div div:hover {
+    transform: translateY(-8px);     /* Levanta la tarjeta */
+    border-color: #8b5cf6;            /* Borde violeta */
+}
 #galeria img {
-  width: 100%;
-  height: 360px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 8px;
-  display: block;
-  margin-bottom: 8px;
-  transition: transform 0.3s;
+    width: 100%;                     /* Ocupa el ancho de la tarjeta */
+    height: 360px;                   /* Altura de la foto */
+    object-fit: cover;               /* Recorta la imagen */
+    object-position: top;             /* Prioriza la parte superior */
+    border-radius: 8px;              /* Esquinas redondeadas */
 }
 
-/* Un zoom muy sutil al pasar el mouse, sin brillos exagerados */
-#galeria img:hover {
-  transform: scale(1.03);
-}
-
-
-/* Tarjeta individual de cada foto (3 por fila, grandes y elegantes) */
-#galeria p,
-#galeria div div {
-  width: 31%;
-  background-color: #181822;
-  border: 2px solid #2a2a38;
-  border-radius: 12px;
-  padding: 12px;
-  margin-bottom: 0;
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  color: #e5e7eb;
-  overflow: hidden;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-  transition: 0.35s;
-}
-
-/* Efecto espectacular al pasar el mouse por encima de la foto */
-#galeria p:hover,
-#galeria div div:hover {
-  transform: translateY(-8px) scale(1.02);
-  border-color: #8b5cf6;
-  background-color: #1f1f2e;
-  box-shadow: 0 12px 28px rgba(139, 92, 246, 0.5);
-  color: #ffffff;
-}
-
-/* La fotografía adentro de su marco */
-#galeria img {
-  width: 100%;
-  height: 360px; /* Altura grande para que se luzca cada detalle */
-  object-fit: cover;
-  object-position: top; /* Enfoca arriba para no cortar nunca la cara */
-  border-radius: 8px;
-  margin-bottom: 10px;
-  display: block;
-  transition: 0.4s;
-}
-
-#galeria p:hover img,
-#galeria div div:hover img {
-  transform: scale(1.05);
-}
-
-/* ==========================================================================
-   9. PÁGINAS SECUNDARIAS (discografia.html y logros.html)
-   ========================================================================== */
+/* 9. PÁGINAS SECUNDARIAS */
 main section h1 {
-  font-size: 32px;
-  color: #8b5cf6;
-  margin-bottom: 15px;
+    color: #8b5cf6;                  /* Título violeta */
+    font-size: 32px;                 /* Tamaño */
+    margin-bottom: 15px;             /* Espacio debajo */
 }
-
 main section h3 {
-  font-size: 22px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  color: #ffffff;
+    color: white;                    /* Subtítulo blanco */
+    font-size: 22px;                 /* Tamaño */
+    margin: 30px 0 10px;             /* Espacio arriba y abajo */
 }
-
-/* Portadas de álbumes en discografia.html */
 main section p img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 12px;
-  border: 3px solid #8b5cf6;
-  display: block;
-  margin: 15px 0;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
-  transition: 0.3s;
+    width: 300px;                    /* Ancho de portada */
+    height: 300px;                   /* Alto de portada */
+    object-fit: cover;               /* Recorta la imagen */
+    border: 3px solid #8b5cf6;       /* Borde violeta */
+    border-radius: 12px;             /* Esquinas redondeadas */
+    margin: 15px 0;                  /* Espacio arriba y abajo */
 }
-
-main section p img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 0 25px rgba(139, 92, 246, 0.6);
-}
-
-/* Listas de premios en logros.html */
-main section ul {
-  list-style: none;
-  margin-bottom: 30px;
-}
-
 main section li {
-  background-color: #15151d;
-  border: 1px solid #262633;
-  border-left: 5px solid #8b5cf6;
-  padding: 16px 20px;
-  margin-bottom: 12px;
-  border-radius: 8px;
-  transition: 0.3s;
+    background: #15151d;             /* Fondo del premio */
+    border-left: 5px solid #8b5cf6;  /* Línea violeta */
+    padding: 16px 20px;              /* Espacio interior */
+    margin-bottom: 12px;              /* Separa los premios */
+    border-radius: 8px;              /* Esquinas redondeadas */
 }
-
-main section li:hover {
-  transform: translateX(5px);
-  border-color: #8b5cf6;
-}
-
-/* Foto principal de premios en logros.html */
 main section > img {
-  width: 100%;
-  max-width: 750px;
-  height: 440px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 12px;
-  border: 3px solid #8b5cf6;
-  display: block;
-  margin: 30px auto 0;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+    display: block;                  /* Permite centrar */
+    width: 100%;                     /* Se adapta al contenedor */
+    max-width: 750px;                /* Ancho máximo */
+    height: 440px;                   /* Altura */
+    object-fit: cover;               /* Recorta la imagen */
+    margin: 30px auto 0;             /* Centra la imagen */
+    border: 3px solid #8b5cf6;       /* Borde violeta */
+    border-radius: 12px;             /* Esquinas redondeadas */
 }
 
-/* ==========================================================================
-   10. PIE DE PÁGINA (FOOTER)
-   ========================================================================== */
+/* 10. PIE DE PÁGINA */
 footer {
-  background-color: #07070a;
-  padding: 40px 50px;
-  border-top: 3px solid #8b5cf6;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
+    background: #07070a;             /* Fondo oscuro */
+    padding: 40px 50px;               /* Espacio interior */
+    border-top: 3px solid #8b5cf6;   /* Línea violeta superior */
 }
-
 footer p {
-  font-size: 14px;
-  color: #9ca3af;
+    color: #9ca3af;                  /* Texto gris */
+    font-size: 14px;                 /* Tamaño del texto */
 }
-
-footer ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-top: 10px;
-}
-
 footer li {
-
-background-color: #15151d;
-border: 1px solid #262633;
-padding: 8px 14px;
-border-radius: 8px;
-transition: 0.3s;
-}
-footer li:hover {
-border-color: #8b5cf6;
-background-color: #1f1f2e;
+    background: #15151d;             /* Fondo del enlace */
+    padding: 8px 14px;               /* Espacio interior */
+    border-radius: 8px;              /* Esquinas redondeadas */
 }
 footer img {
-width: 24px;
-height: 24px;
-object-fit: contain;
-}
-footer a {
-color: #ffffff;
-text-decoration: none;
-font-weight: bold;
-font-size: 13px;
-}
-footer li:hover a {
-color: #8b5cf6;
+    width: 24px;                     /* Ancho del icono */
+    height: 24px;                    /* Alto del icono */
+    object-fit: contain;             /* Muestra el icono completo */
 }

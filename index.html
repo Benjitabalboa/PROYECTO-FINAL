@@ -4,16 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width= , initial-scale=1.0">
+    <!-- Título que aparece en la pestaña del navegador -->
     <title>DREWBPEDIA</title>
+    <!-- Conecta este archivo HTML con tu hoja de estilos CSS -->
     <link rel="stylesheet" href="estilo.css">
-
 </head>
 
+<!-- Contiene todo el contenido visible de la página web -->
 <body>
-      <header>
+    <!-- Cabecera superior de la página -->
+    <header>
+        <!-- Título principal o logotipo del sitio -->
         <h1>DREWBPEDIA</h1>
+        <!-- Contenedor semántico para el menú de navegación -->
         <nav>
+            <!-- Lista desordenada (sin números) para agrupar los enlaces del menú -->
             <ul>
+                <!-- Elemento de lista + enlace (a) que lleva hacia otra página HTML -->
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="eras.html">ERAS</a></li>
                 <li><a href="discografia.html">DISCOGRAFÍA</a></li>
@@ -23,29 +30,36 @@
         </nav>
     </header>
 
+    <!-- Agrupa el contenido principal y único de esta página -->
     <main>
         <!-- 1. SECCIÓN PRINCIPAL (HERO BANNER) -->
+        <!-- Bloque temático; el atributo id="inicio" lo identifica de forma única -->
         <section id="inicio">
-            <!-- Foto gigante de Justin Bieber en blanco y negro (representada por el contenedor) -->
+            <!-- Muestra una imagen; src indica la ruta del archivo y alt el texto alternativo -->
             <img src="./assets/img/portada.jpg" alt="Inicio" width="300">
+            <!-- Encabezado principal de esta sección -->
             <h1>La enciclopedia definitiva sobre el legado de Justin Bieber</h1>
         </section>
 
         <!-- 2. SECCIÓN INTRODUCCIÓN Y FICHA TÉCNICA -->
         <section id="ficha">
-            <!-- Columna de introducción histórica -->
-
+            <!-- Caja genérica (div) para agrupar la columna izquierda -->
             <div>
+                <!-- Subtítulo de segundo nivel -->
                 <h2>El Descubrimiento de una Leyenda (2007 - 2008)</h2>
+                <!-- Párrafo de texto normal -->
                 <p>Nacido en London, Ontario, Canadá, un pequeño niño comenzó a subir videos caseros a YouTube cantando
                     con un talento innato. En 2008, su destino cambió para siempre cuando Scooter Braun descubrió sus
                     videos de forma accidental, abriéndole las puertas a una audición con Usher y al inicio del fenómeno
                     fan más grande del siglo.</p>
 
-                <!-- Botón desplegable nativo en HTML -->
+                <!-- Contenedor interactivo nativo que oculta o muestra texto al hacer clic -->
                 <details class="bio-desplegable">
+                    <!-- Título visible que funciona como botón para abrir el desplegable -->
                     <summary>LEER BIOGRAFÍA COMPLETA</summary>
+                    <!-- Caja con el texto oculto; class sirve para darle estilo en CSS -->
                     <div class="bio-contenido">
+                        <!-- La etiqueta <em> pone el texto en cursiva con énfasis -->
                         <p>Tras firmar con Island Records, su EP debut <em>My World</em> (2009) lo convirtió en el
                             primer artista en tener siete canciones de un álbum debut en el Billboard Hot 100. Con el
                             lanzamiento de <em>My World 2.0</em> (2010) y el hit mundial "Baby", desató la "Bieberfever"
@@ -58,13 +72,14 @@
                 </details>
             </div>
 
-
-            <!-- Columna de la ficha de datos rápidos -->
+            <!-- Caja genérica para agrupar la columna derecha (ficha técnica) -->
             <div>
                 <p>[Foto de perfil: Una imagen de Justin de frente, nítida y de alta calidad]</p>
-
+                <!-- Subtítulo de tercer nivel -->
                 <h3>Tabla de datos rápidos:</h3>
+                <!-- Lista de viñetas con los datos biográficos -->
                 <ul>
+                    <!-- <strong> resalta el texto en negrita con importancia -->
                     <li><strong>Nombre real:</strong> Justin Drew Bieber</li>
                     <li><strong>Nacimiento:</strong> 1 de marzo de 1994 (32 años)</li>
                     <li><strong>Origen:</strong> London, Ontario, Canadá</li>
@@ -75,67 +90,55 @@
             </div>
         </section>
 
-        <!-- 3. SECCIÓN ERAS MÁS DESTACADAS (LÍNEA DE TIEMPO) -->
+        <!-- 3. SECCIÓN ERAS MÁS DESTACADAS -->
         <section id="eras">
             <h2>sus eras mas destacadas</h2>
             <p>-imagenes de los albumes</p>
 
-            <!-- Era My World -->
+            <!-- Bloque independiente y reutilizable para cada era musical -->
             <article>
                 <p>(2009) [FOTO ERA 1] [ ERA MY WORLD ]</p>
                 <img src="./assets/img/My world era.jpg" alt="myworld">
                 <p>El inicio del fenómeno. Flequillo y color morado. Éxito: "Baby".</p>
             </article>
 
-
-
-
-
-            <!-- Era Purpose -->
             <article>
-
-
                 <p>[ ERA PURPOSE ] [FOTO ERAS 4] (2015)</p>
                 <img src="./assets/img/purpose era.jpg" alt="Purpose">
                 <p>El pico global. Cabello platinado.</p>
             </article>
 
-
-
-            <!-- Era Swag -->
             <article>
                 <p>(2025)[FOTO ERAS][ERA SWAG]</p>
-                <img src="./assets/img/SWAG ERA.jpg" alt="">
+                <img src="./assets/img/SWAG ERA.jpg" alt="Swag">
                 <p>"El regreso a la palabra que lo definió. Justin cierra el círculo con un proyecto independiente y
                     experimental, cambiando las reglas del pop comercial por la autenticidad y la crudeza musical."</p>
             </article>
-
         </section>
 
         <!-- 4. SECCIÓN DISCOGRAFÍA -->
         <section id="discografia">
             <h2>ALBUMES DE ESTUDIO</h2>
 
-            <!-- Lista de portadas de álbumes -->
+            <!-- Lista de portadas; Flexbox las acomoda en filas -->
             <ul>
-                <li> <img src="./assets/img/album myw2.jpg" alt="mw2">
-                <li> <img src="./assets/img/believe album.jpg" alt="believe"></li>
-                <li> <img src="./assets/img/journalssssss.jpg" alt="journals"></li>
-                <li> <img src="./assets/img/purpose portada.jpg" alt="purpose"></li>
-                <li> <img src="./assets/img/changes album.jpg" alt="changes"></li>
-                <li> <img src="./assets/img/album justice.jpg" alt="justic"></li>
-                <li> <img src="./assets/img/justin_bieber_swag-portada.jpg" alt="sw"></li>
-                <li> <img src="./assets/img/justin_bieber_swag_2-portada.jpg" alt="sw2"></li>
+                <li><img src="./assets/img/album myw2.jpg" alt="mw2"></li>
+                <li><img src="./assets/img/believe album.jpg" alt="believe"></li>
+                <li><img src="./assets/img/journalssssss.jpg" alt="journals"></li>
+                <li><img src="./assets/img/purpose portada.jpg" alt="purpose"></li>
+                <li><img src="./assets/img/changes album.jpg" alt="changes"></li>
+                <li><img src="./assets/img/album justice.jpg" alt="justic"></li>
+                <li><img src="./assets/img/justin_bieber_swag-portada.jpg" alt="sw"></li>
+                <li><img src="./assets/img/justin_bieber_swag_2-portada.jpg" alt="sw2"></li>
             </ul>
         </section>
 
-
-        <!-- ================= 5. SECCIÓN: VITRINA DE LOGROS ================= -->
+        <!-- 5. SECCIÓN VITRINA DE LOGROS -->
         <section id="logros">
             <h2>🏆 VITRINA DE LOGROS</h2>
             <p>Los hitos y récords que convirtieron a Justin en una leyenda del pop.</p>
 
-            <!-- Bloques de contadores numéricos -->
+            <!-- Contenedor padre de los 3 bloques numéricos -->
             <div>
                 <div>
                     <h3>2</h3>
@@ -151,7 +154,7 @@
                 </div>
             </div>
 
-            <!-- Lista de hitos históricos -->
+            <!-- Contenedor de los hitos escritos -->
             <div>
                 <h3>⭐ Récord en YouTube</h3>
                 <p><strong>Hito:</strong> Primer artista en la historia en superar los 70 millones de suscriptores en la
@@ -170,63 +173,76 @@
                     de permanencia en el #1 de las listas internacionales.</p>
             </div>
 
-            <!-- Imagen destacada lateral de logros -->
+            <!-- Contenedor de la imagen del Grammy -->
             <div>
-                <p> <img src="./assets/img/grammy.jpg" alt="GRAMMY">
-                </p>
+                <p><img src="./assets/img/grammy.jpg" alt="GRAMMY"></p>
             </div>
         </section>
 
-        <!-- SECCIÓN GALERÍA MULTIMEDIA -->
+        <!-- 6. SECCIÓN GALERÍA MULTIMEDIA -->
         <section id="galeria">
             <h2>📸 GALERÍA MULTIMEDIA</h2>
 
-            <!-- Fila 1 -->
-            <div>
-                <p> <img src="./assets/img/myworldera2.jpg" alt="myw2"> My World Tour </p>
-                <p><img src="./assets/img/believe era.jpg" alt="blera"> Believe Tour </p>
-                <p> <img src="./assets/img/purpose era 2.jpg" alt="p2"> Purpose World Tour </p>
-                <p> <img src="./assets/img/justice era.webp" alt="justera"> Justice World Tour
-                </p>
+            <!-- Contenedor padre de la primera fila de fotos -->
+            <div>   
+                <!-- Cada párrafo agrupa la foto con su texto descriptivo -->
+                <p><img src="./assets/img/myworldera2.jpg" alt="myw2"> My World Tour</p>
+                <p><img src="./assets/img/believe era.jpg" alt="blera"> Believe Tour</p>
+                <p><img src="./assets/img/purpose era 2.jpg" alt="p2"> Purpose World Tour</p>
+                <p><img src="./assets/img/justice era.webp" alt="justera"> Justice World Tour</p>
             </div>
-
+        </section>
+   
             <!-- Fila 2 -->
+            <!-- Contenedor padre (div) que agrupa la segunda fila de fotos de la galería -->
             <div>
-                <p> <img src="./assets/img/gala justin hailey.webp" alt="gala"> 
-                </p>
+                <!-- Cada párrafo (<p>) funciona como una tarjeta individual para su imagen -->
+                <p> <img src="./assets/img/gala justin hailey.webp" alt="gala"> </p>
                 <p> <img src="./assets/img/drew justin bieber.jpg" alt="drewjb">: </p>
                 <p> <img src="./assets/img/first place ensayo.png" alt="ensayoblanconegro">: </p>
                 <p> <img src="./assets/img/ensato guitarra.avif" alt="guitarrajustin"></p>
             </div>
+        <!-- Cierra la sección de la galería -->
         </section>
 
+    <!-- Cierra el contenido principal de la página -->
     </main>
 
+    <!-- Pie de página inferior del sitio web -->
     <footer>
 
-        <!-- texto de derechos de autor -->
+        <!-- Primer bloque: agrupa el aviso legal o derechos de autor -->
         <div>
             <p>© 2026 Bieberpedia. Creado por fans para fans con fines educativos y de entretenimiento.</p>
         </div>
 
-
-        <!-- enlaces secundarios a redes sociales oficiales -->
+        <!-- Segundo bloque: agrupa el título y la lista de redes sociales -->
         <div>
             <p>Enlaces secundarios:</p>
+            <!-- Lista desordenada que contiene los enlaces externos -->
             <ul>
+                <!-- Icono de Spotify -->
                 <img src="./assets/img/social.png" alt="spotify">
+                <!-- Elemento de lista + enlace (a); target="_blank" abre la web en una pestaña nueva -->
                 <li><a href="https://open.spotify.com/intl-es/artist/1uNFoZAHBGtllmzznpCI3s" target="_blank">Spotify
                         Oficial de Justin Bieber</a></li>
+                
+                <!-- Icono de YouTube -->
                 <img src="./assets/img/youtube.png" alt="yt">
                 <li><a href="https://www.youtube.com/channel/UCIwFjwMjI0y7PDBVEO9-bkQ" target="_blank">YouTube Oficial
                         de Justin Bieber</a></li>
+                
+                <!-- Icono de Instagram -->
                 <img src="./assets/img/instagram.png" alt="instagram">
                 <li><a href="https://www.instagram.com/lilbieber/" target="_blank">Instagram Oficial de Justin
                         Bieber</a></li>
             </ul>
         </div>
 
+    <!-- Cierra el pie de página -->
     </footer>
+<!-- Cierra el cuerpo visible de la web -->
 </body>
 
+<!-- Cierra todo el documento HTML -->
 </html>
